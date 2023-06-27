@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "3dece1c3-3905-443f-9d4c-65c01098415f",
+		"name": "hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212202"
+	},
+	"item": [
+		{
+			"name": "medico",
+			"item": [
+				{
+					"name": "inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nome_medico",
+									"value": "Alex Roberto",
+									"type": "text"
+								},
+								{
+									"key": "email_medico",
+									"value": "Alex.medico@brabo.com",
+									"type": "text"
+								},
+								{
+									"key": "telefone_medico ",
+									"value": "119856969",
+									"type": "text"
+								},
+								{
+									"key": "celular_medico",
+									"value": "7070707070",
+									"type": "text"
+								},
+								{
+									"key": "tblEspecialidadeId",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "foto_medico",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url_base}}/medico/inserir",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"medico",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "especialidade",
+			"item": [
+				{
+					"name": "inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/especialidade/inserir",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"especialidade",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url_base}}/especialidade/alterar",
+							"host": [
+								"{{url_base}}"
+							],
+							"path": [
+								"especialidade",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "selecionar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
